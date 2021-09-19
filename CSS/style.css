@@ -1,0 +1,103 @@
+.background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.background::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url("../Imagens/peterpan.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.30;
+  }
+
+  .temaAlice {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  .temaAlice::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url("../Imagens/alice.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.30;
+  }
+  .temaAladin {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  .temaAladin::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url("../Imagens/aladin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.30;
+  }
+  .temaPeter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  .temaPeter::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url("../Imagens/peter.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.30;
+  }
+  .temaPinoquio {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  .temaPinoquio::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url("../Imagens/pinoquio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.30;
+  }
+
+.titulo-perguntas{
+  position: relative;
+  font-size: 5em;
+  vertical-align: top;
+}
