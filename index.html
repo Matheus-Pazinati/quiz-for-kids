@@ -7,10 +7,32 @@
   <title>QuizKids</title>
   <link rel="stylesheet" href="./CSS/reset.css">
   <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Permanent+Marker&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="temaAlice">
-    <h1 class="titulo-perguntas">Primeira Pergunta</h1>
+  <header>
+    <div class="background">
+      <h1 class="titulo-principal">💠 KID QUIZ 💠</h1>
+    </div>
+  </header>
+<main>
+  <div class="container-explicacao">
+    <h2 class="titulo-secundario">🧙 COMO JOGAR ?</h2>
+    <p class="texto-explicacao">O jogo possui 10 perguntas. Clique na resposta certa, e você irá para a próxima questão. Caso você erre a alternativa, não tem problema, errar faz parte da aprendizagem, apenas tente outra resposta. Antes de iniciar, escolha um tema para fazer parte do seu jogo. Boa sorte!</p>
   </div>
+  <h2 class="titulo-secundario">💎 ESCOLHER O TEMA 💎</h2>
+  <ul class="botoes-tema">
+    <li class="lista-tema"><button class="botao-tema botao-peter"></button></li>
+    <li class="lista-tema"><button class="botao-tema botao-alice"></button></li>
+    <li class="lista-tema"><button class="botao-tema botao-aladin"></button></li>
+    <li class="lista-tema"><button class="botao-tema botao-pinoquio"></button></li>
+  </ul>
+  <div class="jogar">
+    <button class="botao-jogar" disabled>JOGAR</button>
+  </div>
+</main>
 </body>
 </html>
