@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QuizKids</title>
+  <title>Kid Quiz</title>
   <link rel="stylesheet" href="./CSS/reset.css">
   <link rel="stylesheet" href="./CSS/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,10 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Permanent+Marker&family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-corpo>
   <header>
     <div class="background">
-      <h1 class="titulo-principal">💠 KID QUIZ 💠</h1>
+      <h1 class="titulo-principal">💠<strong> KID QUIZ </strong> 💠</h1>
     </div>
   </header>
 <main>
@@ -25,14 +25,15 @@
   </div>
   <h2 class="titulo-secundario">💎 ESCOLHER O TEMA 💎</h2>
   <ul class="botoes-tema">
-    <li class="lista-tema"><button class="botao-tema botao-peter"></button></li>
-    <li class="lista-tema"><button class="botao-tema botao-alice"></button></li>
-    <li class="lista-tema"><button class="botao-tema botao-aladin"></button></li>
-    <li class="lista-tema"><button class="botao-tema botao-pinoquio"></button></li>
+    <li class="lista-tema"><button class="botao-tema botao-peter" id="1" data-botao-peter></button></li>
+    <li class="lista-tema"><button class="botao-tema botao-alice" id="2" data-botao-alice></button></li>
+    <li class="lista-tema"><button class="botao-tema botao-aladin" id="3" data-botao-aladin></button></li>
+    <li class="lista-tema"><button class="botao-tema botao-pinoquio" id="4" data-botao-pinoquio></button></li>
   </ul>
   <div class="jogar">
-    <button class="botao-jogar" disabled>JOGAR</button>
+    <button class="botao-jogar" data-botao-jogar disabled>JOGAR</button>
   </div>
 </main>
+<script src="index.js" type="module"></script>
 </body>
 </html>

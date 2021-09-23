@@ -2,7 +2,7 @@
 body{
   background-color: #F3F3F3;
   font-family: 'Roboto', sans-serif;
-}
+} 
 .background{
   position: relative;
   display: flex;
@@ -22,83 +22,6 @@ body{
   background-size: cover;
   background-position: top;
   opacity: 0.90;
-  }
-
-  .temaAlice{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-  }
-  .temaAlice::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-image: url("../Imagens/alice.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.15;
-  }
-  .temaAladin{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-  }
-  .temaAladin::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-image: url("../Imagens/aladin.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.30;
-  }
-  .temaPeter{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-  }
-  .temaPeter::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-image: url("../Imagens/peter.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.30;
-  }
-  .temaPinoquio{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-  }
-  .temaPinoquio::before{
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-image: url("../Imagens/pinoquio.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.30;
   }
 .titulo-principal{
   position: relative;
@@ -138,37 +61,48 @@ body{
   width: 100%;
   height: 100%;
   cursor: pointer;
-  transition: 800ms all;
+  transition: 600ms transform;
 }
 .botao-peter {
   background-image: url(../Imagens/botaopeter.jpg);
   background-position: center;
   background-size: cover;
+  filter: grayscale(95%);
 }
 .botao-alice {
   background-image: url(../Imagens/botaoalice.jpg);
   background-position: center;
   background-size: cover;
+  filter: grayscale(95%);
 }
 .botao-aladin {
   background-image: url(../Imagens/botaoaladin.jpg);
   background-position: center;
   background-size: cover;
+  filter: grayscale(95%);
 }
 .botao-pinoquio {
   background-image: url(../Imagens/botaopinoquio.jpg);
   background-position: center;
   background-size: cover;
+  filter: grayscale(95%);
 }
-.botao-peter:hover, .botao-pinoquio:hover, .botao-aladin:hover, .botao-alice:hover{
+.botao-tema:hover{
   border: 3px solid #3171F7;
-  transform: scale(1.1);
+  transform: scale(1.02);
+}
+.botao-tema:focus{
+  filter: none;
 }
 .jogar{
   display: flex;
   width: 94%;
   margin: 3.5em 0;
   justify-content: center;
+}
+.jogar a {
+  width: 70%;
+  text-align: center;
 }
 .botao-jogar{
   width: 60%;
