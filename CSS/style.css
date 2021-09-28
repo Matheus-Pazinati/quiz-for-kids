@@ -27,7 +27,7 @@ body{
   position: relative;
   font-size: 6em;
   text-align: center;
-  font-family: 'Monoton', cursive;
+  font-family: 'Monoton', sans-serif;
   font-weight: bold;
 }
 .container-explicacao{
@@ -43,9 +43,10 @@ body{
   font-weight: bold;
 }
 .texto-explicacao{
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-align: justify;
   margin: 2em 0;
+  line-height: 1.1em;
 }
 .botoes-tema{
   display: flex;
@@ -105,9 +106,9 @@ body{
   text-align: center;
 }
 .botao-jogar{
-  width: 60%;
+  width: 40%;
   height: 20vh;
-  font-size: 2em;
+  font-size: 3em;
   cursor: pointer;
   background-color: #3171F7;
   color: #F3F3F3;

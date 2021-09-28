@@ -1,0 +1,77 @@
+.pergunta {
+  display: flex;
+  background-color: #F6EFE2;
+  height: 25vh;
+}
+.temaAlice{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+}
+.temaAlice::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url("../Imagens/alice.jpg");
+  background-size: cover;
+  background-position: top;
+  opacity: 0.30;
+}
+.temaAladin{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+}
+.temaAladin::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url("../Imagens/aladin.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.30;
+}
+.temaPeter{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+}
+.temaPeter::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url("../Imagens/peterpan.jpg");
+  background-size: cover;
+  background-position: top;
+  opacity: 0.30;
+}
+.temaPinoquio{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+}
+.temaPinoquio::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url("../Imagens/pinoquio.jpg");
+  background-size: cover;
+  background-position: top;
+  opacity: 0.30;
+}
