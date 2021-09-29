@@ -3,6 +3,9 @@ body{
   background-color: #F3F3F3;
   font-family: 'Roboto', sans-serif;
 } 
+strong {
+  font-weight: bold;
+}
 .background{
   position: relative;
   display: flex;
@@ -18,7 +21,7 @@ body{
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Imagens/banner.png");
+  background-image: url("../Images/banner.png");
   background-size: cover;
   background-position: top;
   opacity: 0.90;
@@ -31,12 +34,12 @@ body{
   font-weight: bold;
 }
 .container-explicacao{
-  width: 94%;
+  width: 80%;
   margin: 20px auto;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #2F3AED;
 }
 .titulo-secundario{
-  font-size: 3em;
+  font-size: 48px;
   text-align: center;
   margin-top: 1.5em;
   color: #2F3AED;
@@ -65,25 +68,25 @@ body{
   transition: 600ms transform;
 }
 .botao-peter {
-  background-image: url(../Imagens/botaopeter.jpg);
+  background-image: url(../Images/botaopeter.jpg);
   background-position: center;
   background-size: cover;
   filter: grayscale(95%);
 }
 .botao-alice {
-  background-image: url(../Imagens/botaoalice.jpg);
+  background-image: url(../Images/botaoalice.jpg);
   background-position: center;
   background-size: cover;
   filter: grayscale(95%);
 }
 .botao-aladin {
-  background-image: url(../Imagens/botaoaladin.jpg);
+  background-image: url(../Images/botaoaladin.jpg);
   background-position: center;
   background-size: cover;
   filter: grayscale(95%);
 }
 .botao-pinoquio {
-  background-image: url(../Imagens/botaopinoquio.jpg);
+  background-image: url(../Images/botaopinoquio.jpg);
   background-position: center;
   background-size: cover;
   filter: grayscale(95%);

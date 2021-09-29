@@ -1,13 +1,13 @@
 .pergunta {
   display: flex;
-  background-color: #F6EFE2;
-  height: 25vh;
+  background-color: #F9F9F9;
+  height: 20vh;
 }
 .temaAlice{
   position: relative;
   display: flex;
   justify-content: center;
-  height: 95vh;
+  height: 80vh;
 }
 .temaAlice::before{
   content: '';
@@ -16,16 +16,16 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Imagens/alice.jpg");
+  background-image: url("../Images/alice.jpg");
   background-size: cover;
-  background-position: top;
-  opacity: 0.30;
+  background-position: center;
+  opacity: 0.15;
 }
 .temaAladin{
   position: relative;
   display: flex;
   justify-content: center;
-  height: 95vh;
+  height: 80vh;
 }
 .temaAladin::before{
   content: '';
@@ -34,16 +34,16 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Imagens/aladin.jpg");
+  background-image: url("../Images/aladin.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.30;
+  opacity: 0.15;
 }
 .temaPeter{
   position: relative;
   display: flex;
   justify-content: center;
-  height: 95vh;
+  height: 80vh;
 }
 .temaPeter::before{
   content: '';
@@ -52,16 +52,16 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Imagens/peterpan.jpg");
+  background-image: url("../Images/peterpan.jpg");
   background-size: cover;
-  background-position: top;
-  opacity: 0.30;
+  background-position: center;
+  opacity: 0.15;
 }
 .temaPinoquio{
   position: relative;
   display: flex;
   justify-content: center;
-  height: 95vh;
+  height: 80vh;
 }
 .temaPinoquio::before{
   content: '';
@@ -70,8 +70,8 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Imagens/pinoquio.jpg");
+  background-image: url("../Images/pinoquio.jpg");
   background-size: cover;
   background-position: top;
-  opacity: 0.30;
+  opacity: 0.15;
 }

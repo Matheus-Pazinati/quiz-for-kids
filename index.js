@@ -1,4 +1,4 @@
-import { habilitaJogar } from "./enablePlay.js";
+import { habilitaJogar } from "./Components/enablePlay.js";
 
 const listaTemas = ["[data-botao-peter]", "[data-botao-alice]", "[data-botao-aladin]", "[data-botao-pinoquio]"]
 for (var i=0; i < listaTemas.length; i++){
