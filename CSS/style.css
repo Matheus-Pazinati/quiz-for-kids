@@ -1,6 +1,6 @@
 
 body{
-  background-color: #F3F3F3;
+  background-color: #F0F0F0;
   font-family: 'Roboto', sans-serif;
 } 
 strong {
@@ -36,30 +36,60 @@ strong {
 .container-explicacao{
   width: 80%;
   margin: 20px auto;
-  border-bottom: 1px solid #2F3AED;
 }
 .titulo-secundario{
-  font-size: 48px;
+  font-size: 56px;
   text-align: center;
   margin-top: 1.5em;
   color: #2F3AED;
   font-weight: bold;
 }
+
 .texto-explicacao{
   font-size: 1.8em;
   text-align: justify;
-  margin: 2em 0;
+  margin: 3em 0;
   line-height: 1.1em;
+  border: 1px double #404040;
+  padding: 16px;
+  border-width: 0.9rem;
+  border-radius: 32px;
+}
+.explica-jogar{
+  margin: 56px 0;
+  font-weight: bold;
 }
 .botoes-tema{
   display: flex;
   justify-content: space-around;
   margin-bottom: 5em;
   margin-top: 3em;
+  height: 60vh;
+}
+.banner-peter{
+  background-color: #193000;
+}
+.banner-alice{
+  background-color: #591916;
+}
+.banner-aladin{
+  background-color: #3F2366;
+}
+.banner-pinoquio{
+  background-color: #145873;
+}
+.titulo-tema{
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: bold;
+  margin: 8px 0;
+  color: #FFF;
 }
 .lista-tema{
-  width: 22%;
-  height: 30vh;
+  text-align: center;
+  width: 23%;
+  height: 40vh;
+  margin: 10px;
 }
 .botao-tema{
   width: 100%;
@@ -96,6 +126,7 @@ strong {
   transform: scale(1.02);
 }
 .botao-tema:focus{
+  background-color: #F2A413;
   filter: none;
 }
 .jogar{
