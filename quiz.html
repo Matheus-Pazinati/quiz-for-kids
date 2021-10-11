@@ -7,16 +7,34 @@
   <title>Kid Quiz - Perguntas</title>
   <link rel="stylesheet" href="./CSS/reset.css">
   <link rel="stylesheet" href="./CSS/quiz.css">
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <body>
   <header>
-    <div class="pergunta">
-
+    <div class="container-pergunta">
+      <input type="text" readonly class="pergunta">
     </div>
-
   </header>
   <main data-opcoes>
-
+    <ul class="respostas-opcoes">
+      <li class="botao-resposta">
+        <input type="button" class="resposta" data-opcao-A>
+      </li>
+      <li class="botao-resposta">
+        <input type="button" class="resposta" data-opcao-B>
+      </li>
+      <li class="botao-resposta">
+        <input type="button" class="resposta" data-opcao-C>
+      </li>
+      <li class="botao-resposta">
+        <input type="button" class="resposta" data-opcao-D>
+      </li>
+      <li class="botao-resposta">
+        <button class="proxima-pergunta" data-botao-proxima disabled>Próxima Pergunta</button>
+      </li>
+    </ul>
   </main>
   <script src="./Components/questions.js" type="module"></script>
 </body>

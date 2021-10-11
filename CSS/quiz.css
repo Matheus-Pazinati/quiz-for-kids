@@ -1,13 +1,22 @@
-.pergunta {
+.pergunta{
+  font-family: 'Roboto Mono', monospace;
+  width: 100%;
   display: flex;
   background-color: #F9F9F9;
-  height: 20vh;
+  height: 12.5vh;
+  outline: 0;
+  border: 0 none;
+  padding: 8px;
+  font-size: 2em;
+  color: #030303;
+  box-sizing: border-box;
+  font-weight: bold;
 }
 .temaAlice{
   position: relative;
   display: flex;
   justify-content: center;
-  height: 80vh;
+  height: 87.5vh;
 }
 .temaAlice::before{
   content: '';
@@ -19,13 +28,13 @@
   background-image: url("../Images/alice.jpg");
   background-size: cover;
   background-position: bottom;
-  opacity: 0.30;
+  opacity: 0.60;
 }
 .temaAladin{
   position: relative;
   display: flex;
   justify-content: center;
-  height: 80vh;
+  height: 87.5vh;
 }
 .temaAladin::before{
   content: '';
@@ -37,13 +46,14 @@
   background-image: url("../Images/aladdin.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.30;
+  opacity: 0.60;
 }
 .temaPeter{
   position: relative;
   display: flex;
   justify-content: center;
-  height: 80vh;
+  width: 100vw;
+  height: 87.5vh;
 }
 .temaPeter::before{
   content: '';
@@ -55,13 +65,13 @@
   background-image: url("../Images/peterpan.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.30;
+  opacity: 0.60;
 }
 .temaPinoquio{
   position: relative;
   display: flex;
   justify-content: center;
-  height: 80vh;
+  height: 87.5vh;
 }
 .temaPinoquio::before{
   content: '';
@@ -73,5 +83,61 @@
   background-image: url("../Images/pinoquio.jpg");
   background-size: cover;
   background-position: top;
-  opacity: 0.30;
+  opacity: 0.60;
+}
+.respostas-opcoes{
+  display: flex;
+  width: 100vw;
+  height: 85vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.botao-resposta{
+  text-align: center;
+  width: 40%;
+  height: 15vh;
+  margin: 20px 0;
+}
+.resposta{
+  text-align: center;
+  font-size: 2em;
+  width: 65%;
+  height: 90%;
+  opacity: 0.8;
+  cursor: pointer;
+  color: #F0F0F0;
+}
+.proxima-pergunta{
+  text-align: center;
+  width: 80%;
+  height: 95%;
+  margin-top: 2em;
+  opacity: 0.85;
+  cursor: pointer;
+  font-size: 1.5em;
+  background-color: #3171F7;
+  color: #F3F3F3;
+  font-family: 'Press Start 2P', sans-serif;
+  font-weight: bold;
+}
+.proxima-pergunta:disabled{
+  background-color: #C0C0C0;
+  cursor:initial;
+}
+.resposta:hover{
+  opacity: 0.90;
+}
+.opcoesAlice{
+  background-color: #591916;
+}
+.opcoesAladin{
+  background-color: #3F2366;
+}
+.opcoesPeter{
+  background-color: #193000;
+}
+.opcoesPinoquio{
+  background-color: #145873;
 }

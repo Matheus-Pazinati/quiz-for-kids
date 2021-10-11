@@ -7,9 +7,11 @@ for (var i=0; i < listaTemas.length; i++){
   }
 // -- Inicio da definição do tema para a página de perguntas --
   let botaoEscolhido;
+  let temaOpcao;
   function defineTema(evento){
     evento.preventDefault()
     botaoEscolhido = evento.target.id
+    temaOpcao = evento.target.name
   }
   
   for (var i=0; i < listaTemas.length; i++){
@@ -21,6 +23,7 @@ for (var i=0; i < listaTemas.length; i++){
   botaoJogar.addEventListener('click', (evento) => {
     evento.preventDefault()
     localStorage.setItem("temaFundo", botaoEscolhido)
+    localStorage.setItem("temaOpcoes", temaOpcao)
     window.location.href = "./quiz.html"
   })
  
