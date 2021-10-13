@@ -59,7 +59,7 @@ strong {
 .botoes-tema{
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
   margin-top: 3em;
   height: 60vh;
 }
@@ -129,7 +129,7 @@ strong {
 .jogar{
   display: flex;
   width: 94%;
-  margin: 3.5em 0;
+  margin: 2em 0;
   justify-content: center;
 }
 .jogar a {
