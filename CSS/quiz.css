@@ -1,13 +1,13 @@
 .pergunta{
   font-family: 'Roboto Mono', monospace;
-  width: 100%;
+  width: 100vw;
   display: flex;
   background-color: #F9F9F9;
-  height: 12.5vh;
+  height: 15vh;
   outline: 0;
   border: 0 none;
   padding: 8px;
-  font-size: 2em;
+  font-size: 1.9em;
   color: #030303;
   box-sizing: border-box;
   font-weight: bold;
@@ -16,7 +16,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 87.5vh;
+  height: 85vh;
 }
 .temaAlice::before{
   content: '';
@@ -34,7 +34,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 87.5vh;
+  height: 85vh;
 }
 .temaAladin::before{
   content: '';
@@ -53,7 +53,7 @@
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 87.5vh;
+  height: 85vh;
 }
 .temaPeter::before{
   content: '';
@@ -71,7 +71,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 87.5vh;
+  height: 85vh;
 }
 .temaPinoquio::before{
   content: '';
@@ -93,12 +93,16 @@
   justify-content: center;
   align-items: flex-start;
   box-sizing: border-box;
+  text-align: center;
 }
 .botao-resposta{
+  display: flex;
   text-align: center;
   width: 40%;
   height: 15vh;
   margin: 20px 0;
+  flex-direction: column;
+  align-items: center;
 }
 .resposta{
   text-align: center;
@@ -112,8 +116,7 @@
 .proxima-pergunta{
   text-align: center;
   width: 80%;
-  height: 95%;
-  margin-top: 2em;
+  height: 100%;
   opacity: 0.85;
   cursor: pointer;
   font-size: 1.5em;
@@ -121,6 +124,9 @@
   color: #F3F3F3;
   font-family: 'Press Start 2P', sans-serif;
   font-weight: bold;
+}
+.proxima-pergunta:hover{
+  opacity: 0.95;
 }
 .proxima-pergunta:disabled{
   background-color: #C0C0C0;
@@ -140,4 +146,20 @@
 }
 .opcoesPinoquio{
   background-color: #145873;
+}
+.respostaCerta{
+  background-color: #17C37B;
+  cursor: not-allowed;
+  opacity: 0.90;
+  pointer-events: none;
+}
+.respostaErrada{
+  background-color: #E6625E;
+  cursor: not-allowed;
+  opacity: 0.90;
+  pointer-events: none;
+}
+.desativaBotoes{
+  cursor: not-allowed;
+  pointer-events: none;
 }

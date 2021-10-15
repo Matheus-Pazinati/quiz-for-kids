@@ -14,8 +14,8 @@ const perguntasGerais = new Array()
 
 perguntasPortugues[0] = {
   pergunta: "1- Qual sinônimo de rápido ?",
-  opcoes: ["demorado", "lento", "ágil", "pausado"],
-  resposta: "ágil"
+  opcoes: ["Demorado", "Lento", "Ágil", "Pausado"],
+  resposta: "Ágil"
 }
 perguntasPortugues[1] = {
   pergunta: "2- Qual o plural da palavra Capitão ?",
@@ -28,7 +28,7 @@ perguntasPortugues[2] = {
   resposta: "4" 
 }
 perguntasPortugues[3] = {
-  pergunta: "4- Separando em sílabas a palavra 'Professora', qual das opções está correta ?",
+  pergunta: "4- Separando em sílabas a palavra 'Professora', qual está correta ?",
   opcoes: ["Pro-fe-sso-ra", "Pro-fe-ss-ora", "Prof-es-so-ra", "Pro-fes-so-ra"],
   resposta: "Pro-fes-so-ra"
 }
@@ -73,7 +73,7 @@ perguntasCiencias[1] = {
   resposta: "Carnívoros"
 }
 perguntasCiencias[2] = {
-  pergunta: "3- Qual nome do processo realizado pelas plantas para produzirem seu próprio alimento ?",
+  pergunta: "3- As plantas produzem seu próprio alimento. Qual o nome desse processo ?",
   opcoes: ["Ebulição", "Evolução", "Fissão", "Fotossíntese"],
   resposta: "Fotossíntese"
 }
@@ -121,4 +121,54 @@ if (temaEscolhido == "temaPeter"){
   perguntasTema = perguntasCiencias
 } else {
   perguntasTema = perguntasGerais;
+}
+
+let contPergunta = 0;
+let contOpcoes = 0;
+const botaoProxima = document.querySelector('[data-botao-proxima]')
+let respostas = document.querySelectorAll('.resposta')
+
+respostas.forEach(atribuiOpcoes)
+let perguntaTema = document.querySelector('[data-question]')
+perguntaTema.value = perguntasTema[contPergunta].pergunta.toUpperCase()
+
+const botaoOpcoes = ['[data-opcao-A]', '[data-opcao-B]', '[data-opcao-C]', '[data-opcao-D]']
+for (var i=0; i < botaoOpcoes.length; i++){
+  let opcaoEscolhida = document.querySelector(botaoOpcoes[i])
+  opcaoEscolhida.addEventListener('click', (evento) => {
+    let respostaUsuário = evento.target.value;
+    if (respostaUsuário == perguntasTema[contPergunta].resposta){
+      const opcoesDesativadas = document.querySelectorAll(".resposta")
+      opcoesDesativadas.forEach(function(opcao){
+        opcao.classList.add("desativaBotoes")
+      })
+      opcaoEscolhida.classList.add("respostaCerta")
+      botaoProxima.disabled = false;
+      contPergunta++
+    } else {
+      opcaoEscolhida.classList.add("respostaErrada")
+    }
+  })
+}
+botaoProxima.addEventListener('click', (evento) => {
+  evento.preventDefault()
+  contOpcoes = 0;
+  if (contPergunta === perguntasTema.length){
+    window.open("https://google.com.br")
+    return;
+  }
+  perguntaTema.value = perguntasTema[contPergunta].pergunta.toUpperCase()
+  respostas.forEach(atribuiOpcoes)
+  const opcoesDesativadas = document.querySelectorAll(".resposta")
+  opcoesDesativadas.forEach(function(opcao){
+    opcao.classList.remove("desativaBotoes")
+    })
+  botaoProxima.disabled = true;
+})
+
+function atribuiOpcoes(opcao) {
+  opcao.classList.remove("respostaCerta")
+  opcao.classList.remove("respostaErrada")
+  opcao.value = perguntasTema[contPergunta].opcoes[contOpcoes]
+  contOpcoes++;
 }
