@@ -1,5 +1,5 @@
 body{
-  background-color: #F0F0F0;
+  background-color: #E0E0E0;
   font-family: 'Roboto', sans-serif;
 } 
 strong {
@@ -8,7 +8,7 @@ strong {
 .background{
   position: relative;
   display: flex;
-  height: 40vh;
+  height: 47.5vh;
   align-items: center;
   justify-content: center;
 }
@@ -19,10 +19,10 @@ strong {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Images/banner.png");
+  background-image: url("../Images/banner.jpg");
   background-size: cover;
-  background-position: top;
-  opacity: 0.90;
+  background-position: center;
+  opacity: 0.95;
   }
 .titulo-principal{
   position: relative;
@@ -30,6 +30,8 @@ strong {
   text-align: center;
   font-family: 'Monoton', sans-serif;
   font-weight: bold;
+  color: #FAFF00;
+  text-shadow: 4px 1px 1px #343BBF;
 }
 .container-explicacao{
   width: 80%;
@@ -106,13 +108,13 @@ strong {
   background-size: cover;
   filter: grayscale(95%);
 }
-.botao-aladin {
+.botao-aladin{
   background-image: url(../Images/botaoaladin.jpg);
   background-position: center;
   background-size: cover;
   filter: grayscale(95%);
 }
-.botao-pinoquio {
+.botao-pinoquio{
   background-image: url(../Images/botaopinoquio.jpg);
   background-position: center;
   background-size: cover;
@@ -132,7 +134,7 @@ strong {
   margin: 2em 0;
   justify-content: center;
 }
-.jogar a {
+.jogar a{
   width: 70%;
   text-align: center;
 }
@@ -146,7 +148,7 @@ strong {
   font-weight: bold;
   font-family: 'Press Start 2P', sans-serif;
 }
-.botao-jogar:disabled {
+.botao-jogar:disabled{
   background-color: #C0C0C0;
   cursor:initial;
 }

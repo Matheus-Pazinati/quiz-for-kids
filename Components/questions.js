@@ -154,7 +154,7 @@ botaoProxima.addEventListener('click', (evento) => {
   evento.preventDefault()
   contOpcoes = 0;
   if (contPergunta === perguntasTema.length){
-    window.open("https://google.com.br")
+    window.open("../Pages/congrats.html")
     return;
   }
   perguntaTema.value = perguntasTema[contPergunta].pergunta.toUpperCase()

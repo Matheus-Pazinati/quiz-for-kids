@@ -1,4 +1,4 @@
-import { habilitaJogar } from "./Components/enablePlay.js";
+import { habilitaJogar } from "./enablePlay.js";
 
 const listaTemas = ["[data-botao-peter]", "[data-botao-alice]", "[data-botao-aladin]", "[data-botao-pinoquio]"]
 for (var i=0; i < listaTemas.length; i++){
@@ -24,7 +24,7 @@ for (var i=0; i < listaTemas.length; i++){
     evento.preventDefault()
     localStorage.setItem("temaFundo", botaoEscolhido)
     localStorage.setItem("temaOpcoes", temaOpcao)
-    window.location.href = "./quiz.html"
+    window.location.href = "../Pages/quiz.html"
   })
  
 
