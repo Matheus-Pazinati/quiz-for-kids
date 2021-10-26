@@ -49,10 +49,12 @@ strong {
   text-align: justify;
   margin: 3em 0;
   line-height: 1.1em;
-  border: 1px double #404040;
+  border: 1px solid;
   padding: 16px;
   border-width: 0.9rem;
-  border-radius: 32px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left,#FAFF00, #3B0273, #F24405);
+
 }
 .explica-jogar{
   margin: 56px 0;
@@ -96,13 +98,13 @@ strong {
   cursor: pointer;
   transition: 600ms transform;
 }
-.botao-peter {
+.botao-peter{
   background-image: url(../Images/botaopeter.jpg);
   background-position: center;
   background-size: cover;
   filter: grayscale(95%);
 }
-.botao-alice {
+.botao-alice{
   background-image: url(../Images/botaoalice.jpg);
   background-position: center;
   background-size: cover;
@@ -122,7 +124,7 @@ strong {
 }
 .botao-tema:hover{
   border: 3px solid #3171F7;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 .botao-tema:focus{
   background-color: #F2A413;
@@ -143,12 +145,13 @@ strong {
   height: 20vh;
   font-size: 3em;
   cursor: pointer;
-  background-color: #3171F7;
+  background-image: linear-gradient(#FAFF00, #3B0273, #F24405);
   color: #F3F3F3;
   font-weight: bold;
   font-family: 'Press Start 2P', sans-serif;
 }
 .botao-jogar:disabled{
-  background-color: #C0C0C0;
+  background-image: none;
+  background-color: #a0a0a0;
   cursor:initial;
 }

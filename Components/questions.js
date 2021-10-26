@@ -112,15 +112,20 @@ perguntasGerais[4] = {
   opcoes: ["Candido Portinari", "Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh"],
   resposta: "Candido Portinari"
 }
+let mensagemParabens;
 let perguntasTema;
 if (temaEscolhido == "temaPeter"){
   perguntasTema = perguntasPortugues
+  mensagemParabens = "Português"
 } else if (temaEscolhido == "temaAlice"){
   perguntasTema = perguntasHistGeo
+  mensagemParabens = "História e Geografia"
 } else if (temaEscolhido == "temaAladin"){
   perguntasTema = perguntasCiencias
+  mensagemParabens = "Ciências"
 } else {
   perguntasTema = perguntasGerais;
+  mensagemParabens = "Conhecimentos Gerais"
 }
 
 let contPergunta = 0;
@@ -154,7 +159,8 @@ botaoProxima.addEventListener('click', (evento) => {
   evento.preventDefault()
   contOpcoes = 0;
   if (contPergunta === perguntasTema.length){
-    window.open("../Pages/congrats.html")
+    window.location.href = "../Pages/congrats.html"
+    localStorage.setItem("temaMensagem", mensagemParabens)
     return;
   }
   perguntaTema.value = perguntasTema[contPergunta].pergunta.toUpperCase()
