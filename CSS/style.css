@@ -19,9 +19,7 @@ strong {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Images/banner.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("../Images/banner.jpg") center/cover;
   opacity: 0.95;
   }
 .titulo-principal{
@@ -99,27 +97,19 @@ strong {
   transition: 600ms transform;
 }
 .botao-peter{
-  background-image: url(../Images/botaopeter.jpg);
-  background-position: center;
-  background-size: cover;
+  background: url(../Images/botaopeter.jpg) center/cover;
   filter: grayscale(95%);
 }
 .botao-alice{
-  background-image: url(../Images/botaoalice.jpg);
-  background-position: center;
-  background-size: cover;
+  background: url(../Images/botaoalice.jpg) center/cover;
   filter: grayscale(95%);
 }
 .botao-aladin{
-  background-image: url(../Images/botaoaladin.jpg);
-  background-position: center;
-  background-size: cover;
+  background: url(../Images/botaoaladin.jpg) center/cover;
   filter: grayscale(95%);
 }
 .botao-pinoquio{
-  background-image: url(../Images/botaopinoquio.jpg);
-  background-position: center;
-  background-size: cover;
+  background: url(../Images/botaopinoquio.jpg) center/cover;
   filter: grayscale(95%);
 }
 .botao-tema:hover{
@@ -145,7 +135,7 @@ strong {
   height: 20vh;
   font-size: 3em;
   cursor: pointer;
-  background-image: linear-gradient(#FAFF00, #3B0273, #F24405);
+  background-image: linear-gradient(#3B0273, #F24405);
   color: #F3F3F3;
   font-weight: bold;
   font-family: 'Press Start 2P', sans-serif;
@@ -154,4 +144,80 @@ strong {
   background-image: none;
   background-color: #a0a0a0;
   cursor:initial;
+}
+@media screen and (max-width: 600px) {
+  .background{
+    width: 100vw;
+    flex-wrap: wrap;
+    height: 35vh;
+  }
+  .titulo-principal{
+    width: 200px;
+    font-size: 4em;
+    height: 3em;
+  }
+  .container-explicacao{
+    width: 98vw;
+  }
+  .titulo-secundario{
+    width: 100vw;
+    font-size: 2em;
+  }
+  .texto-explicacao{
+    font-size: 1.4em;
+  }
+  .escolhe-tema{
+    width: 100vw;
+    font-size: 1.8em;
+  }
+  .botoes-tema {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .lista-tema {
+    width: 75vw;
+    height: 60vh;
+    margin-top: 3em;
+  }
+  .botao-tema{
+    height: 90%;
+  }
+  .jogar {
+    width: 100vw;
+    align-items: flex-start;
+  }
+  .botao-jogar{
+    width: 75%;
+    margin: 0.5em 0;
+    font-size: 2.5em;
+  }
+  .titulo-tema{
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .background{
+    height: 20vh;
+  }
+  .botoes-tema{
+    height: 20vh;
+  }
+  .lista-tema {
+    height: 90%;
+    margin: 1px;
+  }
+  .titulo-tema {
+    font-size: 1.1em;
+  }
+  .titulo-secundario{
+    font-size: 2.5em;
+  }
+  .jogar {
+    width: 100vw;
+    height: 10vh;
+    margin: 2em 0;
+  }
+  .botao-jogar {
+    height: 100%;
+  }
 }

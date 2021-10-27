@@ -25,9 +25,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Images/alice.jpg");
-  background-size: cover;
-  background-position: bottom;
+  background: url("../Images/alice.jpg") bottom/cover;
   opacity: 0.60;
 }
 .temaAladin{
@@ -43,9 +41,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Images/aladdin.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("../Images/aladdin.jpg") center/cover;
   opacity: 0.60;
 }
 .temaPeter{
@@ -62,9 +58,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Images/peterpan.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("../Images/peterpan.jpg") center/cover;
   opacity: 0.60;
 }
 .temaPinoquio{
@@ -80,9 +74,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Images/pinoquio.jpg");
-  background-size: cover;
-  background-position: top;
+  background: url("../Images/pinoquio.jpg") top/cover;
   opacity: 0.60;
 }
 .respostas-opcoes{
@@ -162,4 +154,48 @@
 .desativaBotoes{
   cursor: not-allowed;
   pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container-pergunta{
+    display: flex;
+    height: 15vh;
+  }
+  .pergunta{
+    text-align: center;
+    word-break:normal;
+    font-size: 1.35rem;
+    padding: 2px;
+    word-wrap: normal;
+    line-height: 5vh;
+  }
+  .botao-resposta {
+    width: 80%;
+    height: 10vh;
+  }
+  .resposta{
+    width: 85%;
+    font-size: 1.3em;
+  }
+  .proxima-pergunta{
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.3em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pergunta{
+    line-height: 5vh;
+  }
+  .botao-resposta{
+    width: 49%;
+  }
+  .resposta{
+    width: 94%;
+  }
+  .proxima-pergunta{
+    width: 100%;
+    font-size: 2em;
+    line-height: 1.5em;
+  }
 }

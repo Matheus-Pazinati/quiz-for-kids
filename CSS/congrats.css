@@ -2,6 +2,7 @@ body{
   position: relative;
   display: flex;
   height: 100vh;
+  width: 100vw;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
   align-items: center;
@@ -13,12 +14,10 @@ body::before{
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: url("../Images/parabens.jpg");
-  background-size: cover;
-  background-position: center;
+  background: url("../Images/parabens.jpg") center/cover;
   opacity: 0.9;
 }
-.mensagem-parabens {
+.mensagem-parabens{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -35,12 +34,12 @@ body::before{
   border-image-source: linear-gradient(to right, #743ad5, #d53a9d);
   box-sizing: border-box;
 }
-.titulo-parabens {
+.titulo-parabens{
   font-size: 4rem;
   margin: 3rem 0;
   opacity: 1;
 }
-.mensagem {
+.mensagem{
   font-size: 2.3rem;
   text-align: justify;
   width: 85%;
@@ -59,5 +58,30 @@ body::before{
 }
 .botao-menu:hover{
   opacity: 1;
+}
+@media screen and (max-width: 600px) {
+  .mensagem-parabens{
+    width: 94%;
+    justify-content: space-around;
+    opacity: 0.85;
+  }
+  .titulo-parabens{
+    font-size: 3rem;
+  }
+  .mensagem{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  .botao-menu{
+    width: 80%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mensagem-parabens{
+    width: 80%;
+    height: 60vh;
+    justify-content: space-around;
+  }
 }
 
