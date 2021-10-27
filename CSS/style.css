@@ -52,7 +52,6 @@ strong {
   border-width: 0.9rem;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left,#FAFF00, #3B0273, #F24405);
-
 }
 .explica-jogar{
   margin: 56px 0;
@@ -170,11 +169,11 @@ strong {
     width: 100vw;
     font-size: 1.8em;
   }
-  .botoes-tema {
+  .botoes-tema{
     flex-wrap: wrap;
     height: auto;
   }
-  .lista-tema {
+  .lista-tema{
     width: 75vw;
     height: 60vh;
     margin-top: 3em;
@@ -182,7 +181,7 @@ strong {
   .botao-tema{
     height: 90%;
   }
-  .jogar {
+  .jogar{
     width: 100vw;
     align-items: flex-start;
   }
@@ -202,22 +201,22 @@ strong {
   .botoes-tema{
     height: 20vh;
   }
-  .lista-tema {
+  .lista-tema{
     height: 90%;
     margin: 1px;
   }
-  .titulo-tema {
+  .titulo-tema{
     font-size: 1.1em;
   }
   .titulo-secundario{
     font-size: 2.5em;
   }
-  .jogar {
+  .jogar{
     width: 100vw;
     height: 10vh;
     margin: 2em 0;
   }
-  .botao-jogar {
+  .botao-jogar{
     height: 100%;
   }
 }

@@ -24,13 +24,3 @@ for (var i=0; i < listaTemas.length; i++){
     localStorage.setItem("temaOpcoes", temaOpcao)
     window.location.href = "../Pages/quiz.html"
   })
- 
-
-
-
-
-
-
-
-
-
