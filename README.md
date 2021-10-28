@@ -4,6 +4,10 @@
 </p>
 <h2>🧙‍ Sobre</h2>
 <p>O projeto Kids Quiz é um jogo de perguntas e respostas feito para crianças entre 8 a 14 anos, e contém perguntas sobre diversos temas como Português, História e Ciências, com o intuito de entreter e ensinar através de um jogo. </p>
+<br>
+<h2>🎯 Objetivo</h2>
+<p>Meu objetivo ao desenvolver este projeto foi aplicar na prática os conhecimentos obtidos em HTML, CSS e Javascript através de cursos, livros e outras fontes. Além das tecnologias aplicadas, decidi me organizar melhor para elaborar o projeto, criando issues aqui no github para saber o que eu já tinha feito, e o que eu tinha que fazer, desenhando as páginas em um caderno, ou seja, quando eu terminava alguma parte do jogo, eu sempre sabia o que eu tinha que fazer a seguir, e foi uma experiência incrível, além de agregar muito para a minha vida como programador.</p>
+<br>
 <h2>🚀 Tecnologias utilizadas</h2>
 <ul>
   <li>HTML</li>
