@@ -4,5 +4,5 @@ mensagemParabens.textContent = `Você completou o desafio de responder corretame
 const botaoMenu = document.querySelector('.botao-menu')
 botaoMenu.addEventListener('click', (event) => {
   event.preventDefault()
-  window.location.href = "../Pages/index.html"
+  window.location.href = "../index.html"
 })
