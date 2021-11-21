@@ -29,7 +29,10 @@ strong {
   font-family: 'Monoton', sans-serif;
   font-weight: bold;
   color: #FAFF00;
-  text-shadow: 4px 1px 1px #343BBF;
+  text-shadow: 4px 1px 1px #3B0273;
+}
+.titulo-principal span {
+  color: #F24405;
 }
 .container-explicacao{
   width: 80%;
@@ -39,7 +42,7 @@ strong {
   font-size: 56px;
   text-align: center;
   margin-top: 1.5em;
-  color: #2F3AED;
+  color: #3B0273;
   font-weight: bold;
 }
 .texto-explicacao{
