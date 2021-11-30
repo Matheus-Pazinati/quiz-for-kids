@@ -80,7 +80,7 @@ strong {
   background-color: #145873;
 }
 .titulo-tema{
-  font-size: 1.8em;
+  font-size: 1.6em;
   text-align: center;
   font-weight: bold;
   margin: 8px 0;
@@ -147,16 +147,16 @@ strong {
   background-color: #a0a0a0;
   cursor:initial;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .background{
     width: 100vw;
     flex-wrap: wrap;
     height: 35vh;
   }
   .titulo-principal{
-    width: 200px;
-    font-size: 4em;
+    font-size: 3em;
     height: 3em;
+    line-height: 3em;
   }
   .container-explicacao{
     width: 98vw;
@@ -197,12 +197,12 @@ strong {
     font-size: 1.5em;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .background{
-    height: 20vh;
+    height: 35vh;
   }
   .botoes-tema{
-    height: 20vh;
+    height: 40vh;
   }
   .lista-tema{
     height: 90%;
@@ -216,7 +216,7 @@ strong {
   }
   .jogar{
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
     margin: 2em 0;
   }
   .botao-jogar{
