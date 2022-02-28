@@ -8,7 +8,7 @@ Você pode entrar no site e jogar, através deste link: <a href="https://matheus
 </p>
 <br>
 <h2>🎯 Objetivo</h2>
-<p>Meu objetivo ao desenvolver este projeto foi aplicar na prática os conhecimentos obtidos em HTML, CSS e Javascript através de cursos, livros e outras fontes. Além das tecnologias aplicadas, decidi me organizar melhor para elaborar o projeto, criando issues aqui no github para saber o que eu já tinha feito, e o que eu tinha que fazer, ou seja, quando eu terminava alguma parte do jogo, eu sempre sabia o que eu tinha que fazer a seguir, e foi uma experiência incrível, além de agregar muito para a minha vida como programador.</p>
+<p>Aplicar na prática os conhecimentos obtidos em HTML, CSS e Javascript através de cursos, livros e outras fontes. Além disso, como forma de simular o que ocorre no mercado de desenvolvimento de sofware, foram criadas issues para cada componente visual ou funcionalidade que deveriam ser implementados no projeto, onde cada issue era colocada em uma lista de acordo com seu status (Não iniciada, desenvolvendo, finalizada), melhorando o foco e economizando tempo no desenvolvimento do projeto.</p>
 <br>
 <h2>🚀 Tecnologias utilizadas</h2>
 <ul>
