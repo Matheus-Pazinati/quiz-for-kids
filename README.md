@@ -17,5 +17,11 @@ Você pode entrar no site e jogar, através deste link: <a href="https://matheus
   <li>Javascript</li>
 </ul>
 <br>
+<h2>📌 Melhorias a serem implementadas</h2>
+<ul>
+  <li>Salvar as perguntas e respostas em algum serviço online e consumir via API</li>
+  <li>Incluir sons quando o usuário interagir com o jogo</li>
+</ul>
+<br>
 <br>
 <p align="center">Made by Matheus Pazinati 🛸</p>
