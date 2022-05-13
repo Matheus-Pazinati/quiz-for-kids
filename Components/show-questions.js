@@ -12,13 +12,13 @@ opcoesResposta.forEach(function(opcao){
 
 let mensagemParabens;
 let perguntasTema;
-if (temaEscolhido == "temaPeter"){
+if (temaEscolhido == "temaPortugues"){
   perguntasTema = perguntasPortugues
   mensagemParabens = "Português"
-} else if (temaEscolhido == "temaAlice"){
+} else if (temaEscolhido == "temaHistGeo"){
   perguntasTema = perguntasHistGeo
   mensagemParabens = "História e Geografia"
-} else if (temaEscolhido == "temaAladin"){
+} else if (temaEscolhido == "temaCiencias"){
   perguntasTema = perguntasCiencias
   mensagemParabens = "Ciências"
 } else {

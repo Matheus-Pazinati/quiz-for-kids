@@ -1,12 +1,12 @@
 import { habilitaJogar } from "./Components/enablePlay.js";
 
 const listaTemas = ["[data-botao-peter]", "[data-botao-alice]", "[data-botao-aladin]", "[data-botao-pinoquio]"]
-  let botaoEscolhido;
+  let temaEscolhido;
   let temaOpcao;
 
   function defineTema(evento){ //Define a imagem de fundo e as cores dependendo do botão clicado
     evento.preventDefault()
-    botaoEscolhido = evento.target.id
+    temaEscolhido = evento.target.id
     temaOpcao = evento.target.name
   }
 
@@ -21,7 +21,7 @@ const listaTemas = ["[data-botao-peter]", "[data-botao-alice]", "[data-botao-ala
   const botaoJogar = document.querySelector("[data-botao-jogar]")
   botaoJogar.addEventListener('click', (evento) => { //Transfere para a outra página as informações de fundo e cores
     evento.preventDefault()
-    localStorage.setItem("temaFundo", botaoEscolhido)
+    localStorage.setItem("temaFundo", temaEscolhido)
     localStorage.setItem("temaOpcoes", temaOpcao)
     window.location.href = "./Pages/quiz.html"
   })
