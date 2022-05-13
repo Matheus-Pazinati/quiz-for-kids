@@ -19,9 +19,10 @@ Você pode entrar no site e jogar, através deste link: <a href="https://matheus
 <br>
 <h2>📌 Melhorias a serem implementadas</h2>
 <ul>
-  <li>Salvar as perguntas e respostas em algum serviço online e consumir via API</li>
+  <li>Salvar as perguntas e respostas em uma API WEB, como o Json-Server</li>
   <li>Incluir sons quando o usuário interagir com o jogo</li>
   <li>Melhorar a legibilidade do código, separar alguns trechos em funções, alterar nomes de variáveis</li>
+  <li>Criar padrões no CSS para reutilização de código, além de separar as sessões para torná-lo mais legível e fácil de dar manutenção</li>
 </ul>
 <br>
 <br>
