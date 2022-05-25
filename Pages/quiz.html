@@ -2,40 +2,38 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kid Quiz - Perguntas</title>
+  <title>Kids Quiz - Perguntas</title>
   <link rel="stylesheet" href="../CSS/reset.css">
   <link rel="stylesheet" href="../CSS/quiz.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
 <body>
   <header>
-    <div class="container-pergunta">
-      <textarea name="text" readonly class="pergunta" data-question wrap="soft"></textarea>
-    </div>
+    <section class="question__container">
+      <textarea name="text" readonly class="question__text" data-question wrap="soft"></textarea>
+    </section>
   </header>
-  <main data-opcoes>
-    <ul class="respostas-opcoes">
-      <li class="botao-resposta">
-        <input type="button" class="resposta" data-opcao-A>
+  <main data-container-options class="theme-container">
+    <ul class="answers__options">
+      <li class="answers__item">
+        <input type="button" class="answers__button" data-option>
       </li>
-      <li class="botao-resposta">
-        <input type="button" class="resposta" data-opcao-B>
+      <li class="answers__item">
+        <input type="button" class="answers__button" data-option>
       </li>
-      <li class="botao-resposta">
-        <input type="button" class="resposta" data-opcao-C>
+      <li class="answers__item">
+        <input type="button" class="answers__button" data-option>
       </li>
-      <li class="botao-resposta">
-        <input type="button" class="resposta" data-opcao-D>
+      <li class="answers__item">
+        <input type="button" class="answers__button" data-option>
       </li>
-      <li class="botao-resposta">
-        <button class="proxima-pergunta" data-botao-proxima disabled>Próxima Pergunta</button>
+      <li class="answers__item">
+        <button class="answers__next" data-button-next disabled>Próxima Pergunta</button>
       </li>
     </ul>
   </main>
-  <script src="../Components/show-questions.js" type="module"></script>
+  <script src="../Components/quiz.js" type="module"></script>
 </body>
 </html>

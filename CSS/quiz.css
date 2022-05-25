@@ -1,83 +1,52 @@
-.pergunta{
-  font-family: 'Roboto Mono', monospace;
+/* ===================== GLOBAL ==================== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===================== QUESTION ==================== */
+.question__text{
+  font-family: 'Roboto', sans-serif;
   width: 100vw;
   display: flex;
   background-color: #F9F9F9;
   height: 15vh;
   outline: 0;
   border: 0 none;
-  padding: 8px;
+  padding: 0.5rem;
   font-size: 1.9em;
   color: #030303;
-  box-sizing: border-box;
   font-weight: bold;
 }
-.temaHistGeo{
+
+/* ===================== ANSWERS ==================== */
+.theme-container {
   position: relative;
   display: flex;
   justify-content: center;
   height: 85vh;
 }
-.temaHistGeo::before{
+.theme-container::before {
   content: '';
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   bottom: 0px;
+  opacity: 0.60;
+}
+.histGeoTheme::before{
   background: url("../Images/alice.jpg") bottom/cover;
-  opacity: 0.60;
 }
-.temaCiencias{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 85vh;
-}
-.temaCiencias::before{
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+.scienceTheme::before{
   background: url("../Images/aladdin.jpg") center/cover;
-  opacity: 0.60;
 }
-.temaPortugues{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  height: 85vh;
-}
-.temaPortugues::before{
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+.portugueseTheme::before{
   background: url("../Images/peterpan.jpg") center/cover;
-  opacity: 0.60;
 }
-.temaGerais{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 85vh;
-}
-.temaGerais::before{
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+.generalTheme::before{
   background: url("../Images/pinoquio.jpg") top/cover;
-  opacity: 0.60;
 }
-.respostas-opcoes{
+.answers__options{
   display: flex;
   width: 100vw;
   height: 85vh;
@@ -87,7 +56,7 @@
   box-sizing: border-box;
   text-align: center;
 }
-.botao-resposta{
+.answers__item{
   display: flex;
   text-align: center;
   width: 40%;
@@ -96,7 +65,7 @@
   flex-direction: column;
   align-items: center;
 }
-.resposta{
+.answers__button{
   text-align: center;
   font-size: 2em;
   width: 65%;
@@ -105,7 +74,10 @@
   cursor: pointer;
   color: #F0F0F0;
 }
-.proxima-pergunta{
+.answers__button:hover{
+  opacity: 0.90;
+}
+.answers__next{
   text-align: center;
   width: 80%;
   height: 100%;
@@ -114,54 +86,52 @@
   font-size: 1.5em;
   background-color: #3171F7;
   color: #F3F3F3;
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: 'Monoton', cursive;
   font-weight: bold;
 }
-.proxima-pergunta:hover{
+.answers__next:hover{
   opacity: 0.95;
 }
-.proxima-pergunta:disabled{
+.answers__next:disabled{
   background-color: #C0C0C0;
   cursor:initial;
 }
-.resposta:hover{
-  opacity: 0.90;
-}
-.opcoesAlice{
+.alice__options{
   background-color: #591916;
 }
-.opcoesAladin{
+.aladin__options{
   background-color: #3F2366;
 }
-.opcoesPeter{
+.peter__options{
   background-color: #193000;
 }
-.opcoesPinoquio{
+.pinoquio__options{
   background-color: #145873;
 }
-.respostaCerta{
+.answers__correct{
   background-color: #17C37B;
   cursor: not-allowed;
   opacity: 0.90;
   pointer-events: none;
 }
-.respostaErrada{
+.answers__wrong{
   background-color: #E6625E;
   cursor: not-allowed;
   opacity: 0.90;
   pointer-events: none;
 }
-.desativaBotoes{
+.answers__disable{
   cursor: not-allowed;
   pointer-events: none;
 }
 
+/* ===================== RESPONSIVENESS ==================== */
 @media screen and (max-width: 600px) {
-  .container-pergunta{
+  .question__container{
     display: flex;
     height: 15vh;
   }
-  .pergunta{
+  .question__text{
     text-align: center;
     word-break:normal;
     font-size: 1.35rem;
@@ -169,31 +139,32 @@
     word-wrap: normal;
     line-height: 5vh;
   }
-  .botao-resposta{
+  .answers__item{
     width: 80%;
     height: 10vh;
   }
-  .resposta{
+  .answers__button{
     width: 85%;
     font-size: 1.3em;
   }
-  .proxima-pergunta{
+  .answers__next{
     width: 100%;
     font-size: 1.2rem;
     line-height: 1.3em;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .pergunta{
+  .question__text{
     line-height: 5vh;
   }
-  .botao-resposta{
+  .answers__item{
     width: 49%;
   }
-  .resposta{
+  .answers__button{
     width: 94%;
   }
-  .proxima-pergunta{
+  .answers__next{
     width: 100%;
     font-size: 2em;
     line-height: 1.5em;

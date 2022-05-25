@@ -1,3 +1,7 @@
+/* ===================== GLOBAL ==================== */
+* {
+  box-sizing: border-box;
+}
 body{
   position: relative;
   display: flex;
@@ -17,10 +21,13 @@ body::before{
   background: url("../Images/parabens.jpg") center/cover;
   opacity: 0.9;
 }
-.mensagem-parabens{
+
+/* ===================== CONGRATS ==================== */
+.congrats__container{
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-around;
   opacity: 0.90;
   width: 70%;
   margin: 0 auto;
@@ -32,55 +39,57 @@ body::before{
   border: 8px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to right, #743ad5, #d53a9d);
-  box-sizing: border-box;
 }
-.titulo-parabens{
+.congrats__title{
   font-size: 4rem;
   margin: 3rem 0;
   opacity: 1;
+  font-family: 'Bungee', cursive;
 }
-.mensagem{
+.congrats__message{
   font-size: 2.3rem;
   text-align: justify;
   width: 85%;
   opacity: 1;
 }
-.botao-menu{
-  width: 30%;
-  height: 15%;
-  margin-top: 5rem;
+.congrats__button{
+  padding: 3rem;
   font-size: 2rem;
-  border-radius: 4%;
+  border-radius: 8px;
   background-image: linear-gradient(#743ad5, #d53a9d);
   color: #F0F0F0;
   opacity: 0.9;
   cursor: pointer;
+  font-family: 'Bungee', cursive;
+  text-align: center;
 }
-.botao-menu:hover{
+.congrats__button:hover{
   opacity: 1;
 }
+
+/* ===================== RESPONSIVENESS ==================== */
 @media screen and (max-width: 600px) {
-  .mensagem-parabens{
+  .congrats__container{
     width: 94%;
     justify-content: space-around;
     opacity: 0.85;
   }
-  .titulo-parabens{
+  .congrats__title{
     font-size: 3rem;
   }
-  .mensagem{
+  .congrats__message{
     width: 100%;
     font-size: 1.5rem;
     text-align: justify;
   }
-  .botao-menu{
+  .congrats__button{
     width: 80%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .mensagem-parabens{
+  .congrats__container{
     width: 80%;
-    height: 60vh;
+    height: 80vh;
     justify-content: space-around;
   }
 }

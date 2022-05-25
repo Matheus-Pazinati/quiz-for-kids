@@ -2,56 +2,55 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kids Quiz</title>
+  <title>Kids Quiz - Principal</title>
   <link rel="stylesheet" href="./CSS/reset.css">
-  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body data-corpo>
   <header>
-    <div class="background">
-      <h1 class="titulo-principal"><strong>KIDS <span>💠</span> QUIZ</strong></h1>
+    <div class="header__container">
+      <h1 class="header__title"><strong>KIDS <span>💠</span> QUIZ</strong></h1>
     </div>
   </header>
-<main>
-  <section class="container-explicacao">
-    <h2 class="titulo-secundario">🏝️ COMO JOGAR 🏝️</h2>
-    <ul class="texto-explicacao">
-      <li class="explica-jogar">🦸‍♂️💬Escolha um tema para responder: Português, História e Geografia, Ciências ou Conhecimentos Gerais.</li>
-      <li class="explica-jogar">🦹💬 Em cada tema há 5 perguntas com 4 alternativas cada, onde apenas uma é a correta. Quando você acertar, poderá ir para a próxima pergunta.</li>
-      <li class="explica-jogar">🦸💬Caso você erre, não tem problema, errar faz parte da aprendizagem, apenas tente outra resposta.</li>
-      <li class="explica-jogar">🦹‍♂️💬 Quando você acertar as 5 perguntas do tema escolhido, poderá escolher outro tema e continuar jogando. Boa sorte.</li>
+  <main>
+    <section class="explanation__container">
+      <h2 class="secondary-title">🏝️ COMO JOGAR 🏝️</h2>
+      <ul class="explanation__list">
+        <li class="explanation__list-item">🦸‍♂️💬Escolha um tema para responder: Português, História e Geografia, Ciências ou Conhecimentos Gerais.</li>
+        <li class="explanation__list-item">🦹💬 Em cada tema há 5 perguntas com 4 alternativas cada, onde apenas uma é a correta. Quando você acertar, poderá ir para a próxima pergunta.</li>
+        <li class="explanation__list-item">🦸💬Caso você erre, não tem problema, errar faz parte da aprendizagem, apenas tente outra resposta.</li>
+        <li class="explanation__list-item">🦹‍♂️💬 Quando você acertar as 5 perguntas do tema escolhido, poderá escolher outro tema e continuar jogando. Boa sorte.</li>
+      </ul>
+    </section>
+    <section class="theme__choose">
+      <h2 class="secondary-title theme__title">💎 ESCOLHER O TEMA 💎</h2>
+      <ul class="theme__buttons">
+        <li class="theme__buttons-item theme__buttons-peter">
+          <p class="theme__buttons-title">Português</p>
+          <button class="theme__buttons-button button__peter" id="portugueseTheme" name="peter__options" data-button="Português"></button>
+        </li>
+        <li class="theme__buttons-item theme__buttons-alice">
+          <p class="theme__buttons-title">História e Geografia</p>
+          <button class="theme__buttons-button button__alice" id="histGeoTheme" name="alice__options" data-button="História e Geografia"></button>
+        </li>
+        <li class="theme__buttons-item theme__buttons-aladin">
+          <p class="theme__buttons-title">Ciências</p>
+          <button class="theme__buttons-button button__aladin" id="scienceTheme" name="aladin__options" data-button="Ciências"></button>
+        </li>
+        <li class="theme__buttons-item theme__buttons-pinoquio">
+          <p class="theme__buttons-title">Conhecimentos Gerais</p>
+          <button class="theme__buttons-button button__pinoquio" id="generalTheme" name="pinoquio__options" data-button="Conhecimentos Gerais"></button>
+        </li>
     </ul>
-  </section>
-  <h2 class="titulo-secundario escolhe-tema">💎 ESCOLHER O TEMA 💎</h2>
-  <ul class="botoes-tema">
-    <li class="lista-tema banner-peter">
-      <p class="titulo-tema">Português</p>
-      <button class="botao-tema botao-peter" id="temaPortugues" name="opcoesPeter" data-botao-peter></button>
-    </li>
-    <li class="lista-tema banner-alice">
-      <p class="titulo-tema">História e Geografia</p>
-      <button class="botao-tema botao-alice" id="temaHistGeo" name="opcoesAlice" data-botao-alice></button>
-    </li>
-    <li class="lista-tema banner-aladin">
-      <p class="titulo-tema">Ciências</p>
-      <button class="botao-tema botao-aladin" id="temaCiencias" name="opcoesAladin" data-botao-aladin></button>
-    </li>
-    <li class="lista-tema banner-pinoquio">
-      <p class="titulo-tema">Conhecimentos Gerais</p>
-      <button class="botao-tema botao-pinoquio" id="temaGerais" name="opcoesPinoquio" data-botao-pinoquio></button>
-    </li>
-  </ul>
-  <div class="jogar">
-    <button type="button" disabled class="botao-jogar" data-botao-jogar>JOGAR</button>
-  </div>
-</main>
+    </section>
+    <section class="play__container">
+      <button type="button" disabled class="play__button" data-button-play>JOGAR</button>
+    </section>
+  </main>
   <script src="./index.js" type="module"></script>
 </body>
 </html>

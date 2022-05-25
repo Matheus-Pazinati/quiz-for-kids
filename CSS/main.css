@@ -1,0 +1,245 @@
+/* ===================== GLOBAL ==================== */
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: #E0E0E0;
+  font-family: 'Roboto', sans-serif;
+} 
+.secondary-title{
+  font-size: 56px;
+  text-align: center;
+  color: #3B0273;
+  font-weight: bold;
+  font-family: 'Bungee', cursive;
+}
+
+/* ===================== HEADER ==================== */
+.header__container{
+  position: relative;
+  display: flex;
+  height: 47.5vh;
+  align-items: center;
+  justify-content: center;
+}
+.header__container::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: url("../Images/banner.jpg") center/cover;
+  opacity: 0.95;
+  }
+.header__title{
+  position: relative;
+  font-size: 6em;
+  text-align: center;
+  font-family: 'Bungee', cursive;
+  font-weight: bold;
+  color: #FAFF00;
+  text-shadow: 4px 1px 1px #3B0273;
+}
+.header__title span {
+  color: #F24405;
+}
+
+/* ===================== HOW TO PLAY ==================== */
+.explanation__container{
+  width: 80%;
+  margin: 3rem auto;
+}
+.explanation__list{
+  font-size: 1.8em;
+  text-align: justify;
+  margin: 3em 0;
+  line-height: 1.1em;
+  border: 1px solid;
+  padding: 16px;
+  border-width: 0.9rem;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left,#FAFF00, #3B0273, #F24405);
+  border-radius: 8px;
+}
+.explanation__list-item{
+  margin: 56px 0;
+  font-weight: bold;
+}
+
+/* ===================== CHOOSE THEME ==================== */
+.theme__choose {
+  margin: 3rem auto;
+}
+.theme__buttons{
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  margin-top: 3em;
+  height: 500px;
+  gap: 1rem;
+}
+.theme__buttons-item{
+  text-align: center;
+  width: 100%;
+  height: 70%;
+  margin: 10px;
+}
+.theme__buttons-peter{
+  background-color: #193000;
+}
+.theme__buttons-alice{
+  background-color: #591916;
+}
+.theme__buttons-aladin{
+  background-color: #3F2366;
+}
+.theme__buttons-pinoquio{
+  background-color: #145873;
+}
+.theme__buttons-title{
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #FFF;
+}
+.theme__buttons-button{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 600ms transform;
+  filter: grayscale(95%);
+  border: none;
+  border-radius: 8px;
+}
+.theme__buttons-button:hover{
+  border: 3px solid #3171F7;
+  transform: scale(1.01);
+}
+.theme__buttons-button:focus{
+  filter: none;
+}
+.button__peter{
+  background: url(../Images/botaopeter.jpg) center/cover;
+}
+.button__alice{
+  background: url(../Images/botaoalice.jpg) center/cover;
+}
+.button__aladin{
+  background: url(../Images/botaoaladin.jpg) center/cover;
+}
+.button__pinoquio{
+  background: url(../Images/botaopinoquio.jpg) center/cover;
+}
+
+/* ===================== BUTTON PLAY ==================== */
+.play__container{
+  display: flex;
+  width: 94%;
+  margin: 2em 0;
+  justify-content: center;
+}
+.play__button{
+  width: 40%;
+  height: 20vh;
+  font-size: 3em;
+  cursor: pointer;
+  background-image: linear-gradient(#3B0273, #F24405);
+  color: #F3F3F3;
+  font-weight: bold;
+  font-family: 'Bungee', cursive;
+  border: none;
+  border-radius: 8px;
+}
+.play__button:disabled{
+  background-image: none;
+  background-color: #a0a0a0;
+  cursor:initial;
+}
+
+/* ===================== RESPONSIVENESS ==================== */
+@media screen and (max-width: 768px) {
+  .secondary-title{
+    width: 100vw;
+    font-size: 2em;
+  }
+  .header__container{
+    width: 100vw;
+    flex-wrap: wrap;
+    height: 35vh;
+  }
+  .header__title{
+    font-size: 3em;
+    height: 3em;
+    line-height: 3em;
+  }
+  .explanation__container{
+    width: 98vw;
+  }
+  .explanation__list{
+    font-size: 1.4em;
+  }
+  .theme__title{
+    width: 100vw;
+    font-size: 1.8em;
+  }
+  .theme__buttons{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: auto;
+  }
+  .theme__buttons-item{
+    width: 85vw;
+    height: 60vh;
+    margin-top: 3em;
+  }
+  .theme__buttons-title{
+    font-size: 1.5em;
+  }
+  .theme__buttons-button{
+    height: 100%;
+  }
+  .play__container{
+    width: 100vw;
+    align-items: flex-start;
+  }
+  .play__button{
+    width: 85%;
+    margin: 0.5em 0;
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header__container{
+    height: 35vh;
+  }
+  .theme__buttons{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4rem 2rem;
+    margin-bottom: 5rem;
+  }
+  .theme__buttons-item{
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+  }
+  .theme__buttons-title{
+    font-size: 1.1em;
+  }
+  .secondary-title{
+    font-size: 2.5em;
+  }
+  .play__container{
+    width: 100vw;
+    height: 20vh;
+    margin: 2em 0;
+  }
+  .play__button{
+    height: 100%;
+  }
+}
