@@ -108,17 +108,11 @@
 .pinoquio__options{
   background-color: #145873;
 }
-.answers__correct{
-  background-color: #17C37B;
-  cursor: not-allowed;
-  opacity: 0.90;
-  pointer-events: none;
-}
 .answers__wrong{
   background-color: #E6625E;
-  cursor: not-allowed;
-  opacity: 0.90;
-  pointer-events: none;
+}
+.answers__correct{
+  background-color: #17C37B;
 }
 .answers__disable{
   cursor: not-allowed;
