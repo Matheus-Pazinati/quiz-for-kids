@@ -83,10 +83,19 @@ body::before{
     text-align: justify;
   }
   .congrats__button{
-    width: 80%;
+    padding: 1rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .congrats__title{
+    font-size: 3.5rem;
+  }
+  .congrats__message{
+    font-size: 1.75rem;
+  }
+  .congrats__button{
+    padding: 1.5rem;
+  }
   .congrats__container{
     width: 80%;
     height: 80vh;
