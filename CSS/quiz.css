@@ -12,7 +12,8 @@
   height: 15vh;
   outline: 0;
   border: 0 none;
-  padding: 0.5rem;
+  padding: 5vh 0;
+  text-align: center;
   font-size: 1.9em;
   color: #030303;
   font-weight: bold;
@@ -73,9 +74,11 @@
   opacity: 0.8;
   cursor: pointer;
   color: #F0F0F0;
+  border: 2.5px solid #BBB;
 }
 .answers__button:hover{
   opacity: 0.90;
+  border: 5px double #BBB;
 }
 .answers__next{
   text-align: center;
@@ -83,11 +86,12 @@
   height: 100%;
   opacity: 0.85;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 2em;
   background-color: #3171F7;
   color: #F3F3F3;
   font-family: 'Monoton', cursive;
   font-weight: bold;
+  border: none;
 }
 .answers__next:hover{
   opacity: 0.95;
@@ -148,7 +152,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .question__text{
     line-height: 5vh;
   }
