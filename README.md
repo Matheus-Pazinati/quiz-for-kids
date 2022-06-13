@@ -1,6 +1,6 @@
 # <h1 align="center">KIDS 💠 QUIZ</h1>
 <p align="center">
-  <img align="center" src="https://media.giphy.com/media/bkwmkf8Qbv4UpBdbWg/giphy.gif" width="100%">
+  <img align="center" src="https://media.giphy.com/media/bkwmkf8Qbv4UpBdbWg/giphy.gif">
 </p>
 <h2>🏝️ Sobre</h2>
 <p>O projeto Kids Quiz é um jogo de perguntas e respostas feito para crianças entre 8 a 14 anos, e contém perguntas sobre diversos temas como Português, História e Ciências, com o intuito de entreter e ensinar através de um jogo.<br>
@@ -20,7 +20,7 @@ Você pode entrar no site e jogar, através deste link: <a href="https://matheus
 <h2>📌 Melhorias a serem implementadas</h2>
 <ul>
   <li>Salvar as perguntas e respostas em uma API WEB, como o Json-Server - Ok ✔️</li>
-  <li>Incluir sons quando o usuário interagir com o jogo</li>
+  <li>Incluir sons quando o usuário interagir com o jogo - Ok ✔️</li>
   <li>Melhorar a organização e legibilidade do código, separar alguns trechos em funções, alterar nomes de variáveis - Ok ✔️</li>
   <li>Criar padrões no CSS para reutilização de código, além de separar as sessões para torná-lo mais legível e fácil de dar manutenção - Ok ✔️</li>
 </ul>
