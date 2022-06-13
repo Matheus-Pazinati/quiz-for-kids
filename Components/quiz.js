@@ -18,6 +18,8 @@ async function setQuestionAndOptions() {
 
 async function optionsController() {
   const themeQuiz = await getQuizDataBase(themeChoosen)
+  const correctSound = document.querySelector('[data-song-correct]')
+  const errorSound = document.querySelector('[data-song-error]')
   quizOptions.forEach((option) => {
     option.addEventListener('click', (e) => {
       let userChoice = e.target.value
@@ -26,10 +28,12 @@ async function optionsController() {
           options.classList.add('answers__disable')
         })
         option.classList.add('answers__correct')
+        correctSound.play()
         buttonNextQuestion.disabled = false;
         questionCounter++
       } else {
         option.classList.add('answers__wrong')
+        errorSound.play()
       }
     })
   })
